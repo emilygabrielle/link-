@@ -11,7 +11,7 @@ export default function HomeScreen() {
   const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
-    const newAudio = new Audio(require('@/assets/music/background.mp3'));
+    const newAudio = new Audio(require('@/assets/music/musica.mp3'));
     setAudio(newAudio);
     return () => {
       newAudio.pause();
